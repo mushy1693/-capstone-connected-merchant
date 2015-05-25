@@ -1,0 +1,33 @@
+button,ul,input,select{
+
+  margin-top: 20px;
+  font-family: courier;
+}
+.message{
+
+  font-size: 20px;
+  overflow: scroll;
+  height: 140px;
+
+
+}
+.message-area{
+
+  padding: 10px;
+  border: 2px black solid;
+  border-radius:5px;
+
+}
+.top-box{
+
+  border-bottom : 2px solid black;
+  font-size: 25px;
+  font-family: times;
+
+}
+.error-check{
+
+  border-color: red;
+  box-shadow: 1px 1px 1px 1px red;
+
+}

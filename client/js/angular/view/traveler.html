@@ -1,0 +1,19 @@
+<div ng-controller = "traveler" class = "container">
+
+  <h2>Traveler</h2>
+
+  <table class="table table-bordered">
+
+      <tr ng-repeat = "x in travelerData.Result">
+
+        <td>{{x.Username}}</td>
+        <td>{{x.FirstName}}</td>
+        <td>{{x.LastName}}</td>
+        <td>{{x.CurrentLocation}}</td>
+        <td>{{x.Email}}</td>
+
+      </tr>
+
+  </table>
+
+</div>

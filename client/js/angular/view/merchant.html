@@ -1,0 +1,22 @@
+<div ng-controller = "merchant" class = "container">
+
+  <h2>Merchant</h2>
+
+  <table class="table table-bordered">
+
+      <tr ng-repeat = "x in merchantData.Result">
+
+        <td>{{x.StoreType}}</td>
+        <td>{{x.Description}}</td>
+        <td>{{x.Street}}</td>
+        <td>{{x.City}}</td>
+        <td>{{x.State}}</td>
+        <td>{{x.ZipCode}}</td>
+        <td>{{x.Phone}}</td>
+        <td>{{x.Email}}</td>
+
+      </tr>
+
+  </table>
+
+</div>

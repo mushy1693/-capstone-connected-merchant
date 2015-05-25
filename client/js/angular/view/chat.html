@@ -1,0 +1,45 @@
+<div class="container">
+
+  <h2>Chat</h2>
+  <form>
+    <div class="form-group">
+      <input id = "admin-chat" type="text" name="message" class="form-control">
+      <button id = "admin-send" type="button" name="submit" class="btn btn-default">Send</button>
+    </div>
+  </form>
+</div>
+
+<script type="text/javascript">
+
+  var socket = io();
+
+  $(document).ready(function(){
+
+    var adminSend;
+
+    $('#admin-chat').focus();
+
+    $("#admin-chat").keyup(function(event){
+
+      if(event.keyCode == 13){
+        $("#admin-send").click();
+      }
+
+    });
+
+    $('#admin-chat').on('change', function(){
+
+      adminSend = $('#admin-chat').val();
+
+    });
+
+    $('#admin-send').on('click', function(){
+
+      socket.emit("send-chat" , adminSend);
+      $('#admin-chat').val("");
+
+    });
+
+  });
+
+</script>
