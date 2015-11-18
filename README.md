@@ -9,3 +9,11 @@ The web application is built on the MEAN Stack. This project is built for the me
 * Beacon API
 * Mean Stack
 * Implentation for Frontend and Backend Services
+
+### Contributor: ###
+
+* [Mushy1693](https://bitbucket.org/mushy1693/)
+
+### Languages: ###
+
+* Mean Stack
